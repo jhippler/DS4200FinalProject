@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicting Alzheimer’s Disease</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f6ff;
+            color: #03396c;
+        }
+        header, footer {
+            background-color: #005b96;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #6497b1;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem;
+            background-color: white;
+            margin-top: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 91, 150, 0.1);
+        }
+        .viz img, .viz div {
+            width: 100%;
+            height: auto;
+            margin-top: 1rem;
+        }
+        h2 {
+            color: #011f4b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Predicting Alzheimer’s Disease</h1>
+        <p>Analyzing Risk Factors and Prevalence in North America</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Introduction</a>
+        <a href="visualization1.html">Viz 1</a>
+        <a href="visualization2.html">Viz 2</a>
+        <a href="visualization3.html">Viz 3</a>
+        <a href="visualization4.html">Viz 4</a>
+        <a href="visualization5.html">Viz 5</a>
+        <a href="conclusion.html">Conclusion</a>
+    </nav>
+
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Alzheimer’s disease is one of the most prevalent neurodegenerative disorders worldwide and a leading cause of dementia. In North America, the burden of Alzheimer’s continues to grow, driven by aging populations and increasing life expectancy. This project aims to uncover key risk factors and prevalence trends within North America using data-driven insights and interactive visualizations.</p>
+
+        <h2>Data Description</h2>
+        <p>We are using the Alzheimer’s Prediction Dataset from Kaggle, which includes 74,283 records from 20 countries. For this project, we filtered the data to include only North American countries: the U.S., Mexico, and Canada. The dataset includes demographic, lifestyle, medical, and genetic variables relevant to Alzheimer’s risk.</p>
+        <ul>
+            <li><a href="https://www.kaggle.com/datasets/ankushpanday1/alzheimers-prediction-dataset-global" target="_blank">Dataset Source</a></li>
+            <li><a href="https://doi.org/10.1002/alz.13809" target="_blank">Alzheimer's Disease Facts and Figures (2024)</a></li>
+            <li><a href="https://doi.org/10.1001/jamaneurol.2022.0976" target="_blank">Risk Factors by Sex and Race in the US</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Team Members: Logan (Data Preprocessing & Altair), Alex (Modeling & ML Integration), Justin (D3.js & Web Development)</p>
+        <p>DS4200 - Spring 2025</p>
+    </footer>
+</body>
+</html>
