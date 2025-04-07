@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization 1 - Diagnosis by Age Group</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f6ff;
+            color: #03396c;
+        }
+        header, footer {
+            background-color: #005b96;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #6497b1;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 2rem;
+            background-color: white;
+            margin-top: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 91, 150, 0.1);
+            overflow-x: auto;
+        }
+        .viz-container {
+            margin-top: 2rem;
+            max-width: 100%;
+        }
+        h2 {
+            color: #011f4b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Predicting Alzheimer’s Disease</h1>
+        <p>Visualization 1: Diagnosis Rate by Age Group</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Introduction</a>
+        <a href="visualization1.html">Viz 1</a>
+        <a href="visualization2.html">Viz 2</a>
+        <a href="visualization3.html">Viz 3</a>
+        <a href="visualization4.html">Viz 4</a>
+        <a href="visualization5.html">Viz 5</a>
+        <a href="conclusion.html">Conclusion</a>
+    </nav>
+
+    <section>
+        <h2>Diagnosis Rate by Age Group and Genetic Risk</h2>
+        <p>This visualization explores the percentage of individuals diagnosed with Alzheimer’s across different age groups and the relationship between genetic risk factors (specifically APOE-ε4 allele presence) and diagnosis outcomes. The goal is to identify age-related trends and how genetic predispositions influence diagnosis rates.</p>
+
+        <div id="viz1" class="viz-container"></div>
+
+        <h3>Interpretation</h3>
+        <p>The left side of the chart displays the Alzheimer’s diagnosis rates per age group. As expected, diagnosis rates increase significantly with age, especially past the age of 70. The dropdown feature allows the viewer to isolate a specific age group.</p>
+        <p>On the right side, we observe how the presence of the APOE-ε4 allele relates to diagnosis rates within the selected age group. Individuals with one or more copies of the APOE-ε4 allele show a higher proportion of positive diagnoses. This reinforces the importance of genetic screening in at-risk populations and highlights the compounding risk of age and genetic predisposition.</p>
+    </section>
+
+    <footer>
+        <p>DS4200 - Spring 2025</p>
+    </footer>
+
+    <script>
+        vegaEmbed('#viz1', 'graphs/viz1.json', {actions: false}).catch(console.warn);
+    </script>
+</body>
+</html>
