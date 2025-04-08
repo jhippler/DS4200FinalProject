@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Visualization 2 - Age Distribution by Diagnosis</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f6ff;
+      color: #03396c;
+    }
+    header, footer {
+      background-color: #005b96;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #6497b1;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+      background-color: white;
+      margin-top: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 91, 150, 0.1);
+    }
+    .viz-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+    }
+    .viz-container {
+      width: 100%;
+      max-width: 900px;
+    }
+    .vega-embed {
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+    }
+    .vega-view {
+      margin: auto !important;
+    }
+    h2 {
+      color: #011f4b;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Predicting Alzheimer’s Disease</h1>
+    <p>Visualization 2: Age Distribution by Diagnosis</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Introduction</a>
+    <a href="visualization1.html">Visualization 1</a>
+    <a href="visualization2.html">Visualization 2</a>
+    <a href="visualization3.html">Visualization 3</a>
+    <a href="visualization4.html">Visualization 4</a>
+    <a href="visualization5.html">Visualization 5</a>
+    <a href="conclusion.html">Conclusion</a>
+  </nav>
+
+  <section>
+    <h2>Age Distribution by Diagnosis (Dropdown Country Filter)</h2>
+    <p>This interactive violin plot displays how age is distributed among individuals with or without Alzheimer’s, based on the selected country (USA, Canada, or Mexico).</p>
+
+    <div class="viz-wrapper">
+      <div id="viz2" class="viz-container"></div>
+    </div>
+
+    <h3>Interpretation</h3>
+    <p>The country dropdown lets you view the distribution of ages across diagnosed vs. non-diagnosed individuals in different countries. These distributions help visualize how Alzheimer’s manifests across age ranges in different populations.</p>
+  </section>
+
+  <footer>
+    <p>DS4200 - Spring 2025</p>
+  </footer>
+
+  <script>
+    vegaEmbed('#viz2', 'graphs/viz2.json', {actions: false})
+      .then(res => res.view.resize())
+      .catch(console.warn);
+  </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+[
+  {
+    "Country": "Argentina",
+    "Prevalence": 0.40203698740284105
+  },
+  {
+    "Country": "Australia",
+    "Prevalence": 0.4026934248745709
+  },
+  {
+    "Country": "Brazil",
+    "Prevalence": 0.48580359468611617
+  },
+  {
+    "Country": "Canada",
+    "Prevalence": 0.34141740770681756
+  },
+  {
+    "Country": "China",
+    "Prevalence": 0.38641425389755013
+  },
+  {
+    "Country": "France",
+    "Prevalence": 0.4005390835579515
+  },
+  {
+    "Country": "Germany",
+    "Prevalence": 0.4108221696874179
+  },
+  {
+    "Country": "India",
+    "Prevalence": 0.5033413525795242
+  },
+  {
+    "Country": "Italy",
+    "Prevalence": 0.39339419978517726
+  },
+  {
+    "Country": "Japan",
+    "Prevalence": 0.3393761663556385
+  },
+  {
+    "Country": "Mexico",
+    "Prevalence": 0.4847137298499166
+  },
+  {
+    "Country": "Norway",
+    "Prevalence": 0.34970318402590395
+  },
+  {
+    "Country": "Russia",
+    "Prevalence": 0.5044997353096876
+  },
+  {
+    "Country": "Saudi Arabia",
+    "Prevalence": 0.4142545057345713
+  },
+  {
+    "Country": "South Africa",
+    "Prevalence": 0.4952127659574468
+  },
+  {
+    "Country": "South Korea",
+    "Prevalence": 0.41586280814576637
+  },
+  {
+    "Country": "Spain",
+    "Prevalence": 0.39994591671173607
+  },
+  {
+    "Country": "Sweden",
+    "Prevalence": 0.34209812957441044
+  },
+  {
+    "Country": "UK",
+    "Prevalence": 0.40372500684743906
+  },
+  {
+    "Country": "USA",
+    "Prevalence": 0.3885508849557522
+  }
+]
